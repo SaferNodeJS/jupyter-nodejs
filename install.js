@@ -3,7 +3,8 @@ var fs = require('fs')
 var path = require('path')
 var mkdirp = require('mkdirp')
 
-var installPath = path.join(process.env.HOME, '.ipython/kernels/nodejs')
+const homedir = require('os').homedir();
+var installPath = path.join(homedir, '.ipython/kernels/nodejs')
 if (process.argv.length >= 3) {
   installPath = process.argv[2]
 }

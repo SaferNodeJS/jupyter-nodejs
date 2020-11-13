@@ -14,7 +14,9 @@ Get it while it's hot! or view the [example notebook](http://nbviewer.ipython.or
 git clone https://github.com/notablemind/jupyter-nodejs.git
 cd jupyter-nodejs
 mkdir -p ~/.ipython/kernels/nodejs/
-npm install && node install.js
+npm install --save-dev babel-cli
+npm install 
+node install.js
 npm run build
 npm run build-ext
 jupyter console --kernel nodejs

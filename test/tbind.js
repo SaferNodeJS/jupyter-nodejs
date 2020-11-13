@@ -19,6 +19,6 @@ p.bind('tcp://*:55432', err => {
   setTimeout(() => {
     process.exit()
   }, 200)
-  
+
 })
 
